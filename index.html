@@ -27,7 +27,7 @@
         <img
             src="https://dev-stuartcollectionmedia.ucsd.edu/_images/artists/hawkinson-bear/Main_hawkinson-01.jpg"
             alt="UCSD CSE Bear"
-            width="250"
+            width="550"
         />
         <section>
             <p>Week 3 Monday, April 14th, 2025</p>
@@ -41,16 +41,90 @@
             </ol>
             <hr>
         </section>
-        <h2 id="agenda">Attendance</h2>
+        <h2 id="attendance">Attendance</h2>
+        <div>
+            <ul>
+                <li><input type="checkbox"> Blake Newhouse</li>
+                <li><input type="checkbox"> Kiran Mandyam</li>
+                <li><input type="checkbox"> Aatyanth Thimma Udeyakumar</li>
+                <li><input type="checkbox"> Haris Zia</li>
+                <li><input type="checkbox"> Daniel Ahoussou</li>
+                <li><input type="checkbox"> Srideep Dornala</li>
+            </ul>
+        </div>
+        <h3 id="old-buisness">Unfinished Buisness:</h3>
         <ul>
-            <li><input type="checkbox"> Blake Newhouse</li>
-            <li><input type="checkbox"> Kiran Mandyam</li>
-            <li><input type="checkbox"> Aatyanth Thimma Udeyakumar</li>
-            <li><input type="checkbox"> Haris Zia</li>
-            <li><input type="checkbox"> Daniel Ahoussou</li>
-            <li><input type="checkbox"> Srideep Dornala</li>
+            <li>Hiring of new employees</li>
+            <li><i>Project Leader</i> Check In</li>
         </ul>
+        <h3 id="new-buisness">New Buisness:</h3>
+        <p>Short meeting transcription snippit:</p>
+        <p style="margin-left: 25px;">"The important topic of today's meeting is rolling out the alpha version of our product, chatR2D2. <br>
+        With the widespread usage of this, users will be able to enjoy <i>robotic</i>, AI answers to any questions they ask."</p>
+        <p style="margin-left: 25px;">"Does anyone have any questions about the product?"</p>
+        <p style="margin-left: 25px;">"Not questions, but an <strong>error.</strong> The product is supposed to emulate a robot that can be used widely across the globe, 
+        but we have found that it is unable to be translated into other languages or using in different countries."</p>
+        <p style="margin-left: 25px;"><em>"Yes, this is quite an issue.</em> Have we made any progress on the subpart of the product, C3PO?"</p>
+        <details style="margin-left: 25px;">
+            <summary>C3PO</summary>
+            <p>"C3PO is a new AI powered translation bot that allows for the conversion of English into over <i>6 million</i> languages."</p>
+        </details>
+        <p style="margin-left: 25px;">"Yes, C3PO is coming along on schedule and should be expected ot be rolled out within the next few weeks."</p>
+        <p style="margin-left: 25px;">"Perfect."</p>
+        <p>Rest of the meeting continued, talking about C3PO logistics and product deployment.</p>
         <hr>
+        <h3 id="questions">Questions, Comments, Concerns:</h3>
+        <form>
+            <label for="fname">First and Last name:</label><br>
+            <input type="text"><br>
+            <br>
+            <label for="date">Date of Birth:</label><br>
+            <input type="date"><br>
+            <br>
+            <fieldset>
+                <legend>Gender:</legend>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="gender"> Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="gender"> Female</label><br>
+                <input type="radio" id="non-binary" name="gender" value="Non-binary">
+                <label for="gender"> Non-binary</label><br> 
+                <input type="radio" id="other" name="gender" value="Other"><label for="gender"> Other:</label>
+                <input type="text"><br>
+            </fieldset>
+            <br>
+            <label for="department">Department:</label>
+            <input list="departments" id="department" name="department-choice" /><br>
+
+            <datalist id="departments">
+                <option value="Management"></option>
+                <option value="Engineering"></option>
+                <option value="Finance"></option>
+                <option value="Human Resources"></option>
+                <option value="Marketing"></option>
+            </datalist>
+
+            <br>
+            <label for="years">Years at Company:</label>
+
+            <select id="year-count">
+                <option value="0-2">0-2</option>
+                <option value="2-5">2-5</option>
+                <option value="5-10">5-10</option>
+                <option value="10+">10+</option>
+            </select>
+
+            <br>
+            <br>
+            <button type="button">Click for interaction!</button>
+            <br>
+            <br>
+            <label for="questions">Questions, comments, or concerns:</label><br>
+            <textarea id="questions" name="response" rows="5" cols="150">Please respond here.</textarea><br>
+            <br>
+            <input type="submit">
+        </form>
     </main>
   </body>
 </html>
