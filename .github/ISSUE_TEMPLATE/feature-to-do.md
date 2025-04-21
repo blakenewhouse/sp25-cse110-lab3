@@ -1,6 +1,6 @@
 ---
 name: Feature TO-DO
-about: New Feature needs to be updates/implemented
+about: New Feature needs to be updated/implemented
 title: ''
 labels: ''
 assignees: blakenewhouse
