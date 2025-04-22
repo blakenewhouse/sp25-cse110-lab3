@@ -1,0 +1,28 @@
+header {
+    background-color: #b284d1;
+    color: black;
+    padding: 10px;  
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b284d1;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px;
+}
+
+header ul li a:hover {
+    background-color: rgb(218, 190, 230);
+}
