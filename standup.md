@@ -1,4 +1,4 @@
-# Standup Meeting ---
+# Standup Meeting 
 
 ### Date: 
 Insert date here
@@ -8,7 +8,7 @@ Insert present members here
 
 ## Announcements
 
-Insert ==imporant== announcements/progress here
+Insert imporant announcements/progress here
 ---
 
 ## Individual Check-In:
