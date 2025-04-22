@@ -32,7 +32,7 @@ Insert imporant announcements/progress here
 3. Do you have any problems/issues?
 
 ...
----
+
 ## Group Goals(if applicable)
 
 - List of goals for a group/the meeting group as a whole
@@ -40,7 +40,7 @@ Insert imporant announcements/progress here
 - Can be as simple as working around a problem, or as complex as completing an entire branch of a project
 
 ...
----
+
 ## Closing remarks
 
 Insert any closing statements here
