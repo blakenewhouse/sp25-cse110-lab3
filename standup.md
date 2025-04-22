@@ -4,12 +4,12 @@
 Insert date here
 ### Attendees:
 Insert present members here
----
+
 
 ## Announcements
 
 Insert imporant announcements/progress here
----
+
 
 ## Individual Check-In:
 
