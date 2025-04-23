@@ -48,7 +48,6 @@ header ul li a {
     color: black;
     text-align: center;
     padding: 2mm;
-    width: fill;
     font-size:large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -173,7 +172,7 @@ main div ul li {
     display: inline;
     margin: 0 0 0 0;
     padding-left: 1cm;
-    padding-right: 1 cm;
+    padding-right: 1cm;
     padding-top: 0;
     padding-bottom: 0;
 }
