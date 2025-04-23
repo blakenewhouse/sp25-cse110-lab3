@@ -48,6 +48,7 @@ header ul li a {
     color: black;
     text-align: center;
     padding: 2mm;
+    width: fill;
     font-size:large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -67,7 +68,7 @@ header ul li a:hover {
 
 main {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: color(sgrb 0.8 0.7 0.6);
+    background-color: color(display-p3 0.8 0.7 0.6);
     padding: 1.2em;
 }
 
@@ -76,7 +77,7 @@ main h1 {
     position: sticky;
     top: 10px;
     padding: 10px 0px 10px 0px;
-    background-color: color(sgrb 0.8 0.7 0.6);
+    background-color: color(display-p3 0.8 0.7 0.6);
     border: 0.5mm solid black;
 }
 
@@ -162,8 +163,8 @@ main h2 {
 
 
 main h3 {
-    color: color-mix(in sgrb, #4e3eb4 90%, white);
-    background-color: color(sgrb 0.7 0.6 0.5);
+    color: color-mix(in oklab, #4e3eb4 90%, white);
+    background-color: color(display-p3 0.7 0.6 0.5);
     width: max-content;
     padding: 5px;
 }
@@ -172,7 +173,7 @@ main div ul li {
     display: inline;
     margin: 0 0 0 0;
     padding-left: 1cm;
-    padding-right: 1cm;
+    padding-right: 1 cm;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -182,15 +183,14 @@ main form {
     padding: 5px;   
 }
 
-main form button:hover {
-    background-color: green;
-}
-
-main form button{
+main form button {
+    &:hover {
+        background-color: green;
+    }
     &:active {
         background-color: red;
     }
-    
+
 }
 
 p[class=summ] {
