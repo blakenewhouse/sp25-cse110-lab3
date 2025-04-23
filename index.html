@@ -8,11 +8,18 @@
     <meta name="author" content="Blake Newhouse">
     <link rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        }
+    </style>
   </head>
   <body>
     
     <header>
-        <div>Week 3 Team Meeting</div>
         <nav>
             <ul>
                 <li><a href="#agenda">Agenda</a></li>
@@ -30,18 +37,18 @@
             alt="UCSD CSE Bear"
             width="550"
         >
+        <p class="date">Week 3 Monday, April 14th, 2025</p>
         <section>
-            <p>Week 3 Monday, April 14th, 2025</p>
+            
             <h2 id="agenda">Agenda</h2>
             <hr>
             <ol>
                 <li><input type="checkbox"> <b>Attendance</b></li>
-                <li><input type="checkbox"> <b>Unfinished Buisness</b></li>
-                <li><input type="checkbox"> <b>New Buisness</b></li>
+                <li><input type="checkbox" class="business"> <b>Unfinished Buisness</b></li>
+                <li><input type="checkbox" class="business"> <b>New Buisness</b></li>
                 <li><input type="checkbox"> <b>Questions/Comments/Concerns</b></li>
             </ol>
             <hr>
-        </section>
         <h2 id="attendance">Attendance</h2>
         <div>
             <ul>
@@ -53,26 +60,27 @@
                 <li><input type="checkbox"> Srideep Dornala</li>
             </ul>
         </div>
+        </section>
         <h3 id="old-buisness">Unfinished Buisness:</h3>
         <ul>
             <li>Hiring of new employees</li>
             <li><i>Project Leader</i> Check In</li>
         </ul>
         <h3 id="new-buisness">New Buisness:</h3>
-        <p>Short meeting transcription snippit:</p>
-        <p style="margin-left: 25px;">"The important topic of today's meeting is rolling out the alpha version of our product, chatR2D2. <br>
+        <p class="start/end">Short meeting transcription snippit:</p>
+        <p style="margin-left: 25px;" class="summ">"The important topic of today's meeting is rolling out the alpha version of our product, chatR2D2. <br>
         With the widespread usage of this, users will be able to enjoy <i>robotic</i>, AI answers to any questions they ask."</p>
-        <p style="margin-left: 25px;">"Does anyone have any questions about the product?"</p>
-        <p style="margin-left: 25px;">"Not questions, but an <strong>error.</strong> The product is supposed to emulate a robot that can be used widely across the globe, 
+        <p style="margin-left: 25px;" class="summ">"Does anyone have any questions about the product?"</p>
+        <p style="margin-left: 25px;" class="summ">"Not questions, but an <strong>error.</strong> The product is supposed to emulate a robot that can be used widely across the globe, 
         but we have found that it is unable to be translated into other languages or using in different countries."</p>
-        <p style="margin-left: 25px;"><em>"Yes, this is quite an issue.</em> Have we made any progress on the subpart of the product, C3PO?"</p>
-        <details style="margin-left: 25px;">
+        <p style="margin-left: 25px;" class="summ"><em>"Yes, this is quite an issue.</em> Have we made any progress on the subpart of the product, C3PO?"</p>
+        <details style="margin-left: 25px;" class="summ">
             <summary>C3PO</summary>
-            <p>"C3PO is a new AI powered translation bot that allows for the conversion of English into over <i>6 million</i> languages."</p>
+            <p class="summ">"C3PO is a new AI powered translation bot that allows for the conversion of English into over <i>6 million</i> languages."</p>
         </details>
-        <p style="margin-left: 25px;">"Yes, C3PO is coming along on schedule and should be expected ot be rolled out within the next few weeks."</p>
-        <p style="margin-left: 25px;">"Perfect."</p>
-        <p>Rest of the meeting continued, talking about C3PO logistics and product deployment.</p>
+        <p style="margin-left: 25px;" class="summ">"Yes, C3PO is coming along on schedule and should be expected to be rolled out within the next few weeks."</p>
+        <p style="margin-left: 25px;" class="summ">"Perfect."</p>
+        <p class="start/end">Rest of the meeting continued, talking about C3PO logistics and product deployment.</p>
         <hr>
         <h3> Meeting video/audio snippit:</h3>
 
@@ -80,7 +88,6 @@
             <source src="images/video1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-
         <audio controls>
             <source src="images/audio1.mp3" type="audio/mp3">
         Your browser does not support the audio element.
@@ -130,11 +137,11 @@
 
             <br>
             <br>
-            <button type="button">Click for interaction!</button>
+            <button type="button" style="font-family: 'Montserrat', sans-serif;font-optical-sizing: auto;font-weight: 300;font-style: normal;">Click for interaction!</button>
             <br>
             <br>
             <label for="question-box">Questions, comments, or concerns:</label><br>
-            <textarea id="question-box" name="response" rows="5" cols="150">Please respond here.</textarea><br>
+            <textarea id="question-box" name="response" rows="5" cols="75">Please respond here.</textarea><br>
             <br>
             <input type="submit">
         </form>
