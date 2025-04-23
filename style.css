@@ -1,28 +1,222 @@
+/* Defining variables */
+:root {
+    --pink: rgb(159, 40, 86);
+}
+
+@media (max-width: 600px) {
+    body {
+      font-size: 16px;
+      padding: 1rem;
+    }
+  
+    .nav {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+}
+
 header {
     background-color: #b284d1;
     color: black;
     padding: 10px;  
+    width: auto;
 }
 
+/* Navigation Bar */
 header ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 0 0 0 0;
+    
     overflow: hidden;
     background-color: #b284d1;
 }
 
-header ul li {
+header ul > li {
     float: left;
+    width: 20%
 }
 
 header ul li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 8px;
+    padding: 2mm;
+    width: fill;
+    font-size:large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: auto;
 }
 
+/* mouse "hover" color change */
 header ul li a:hover {
     background-color: rgb(218, 190, 230);
+    border-style: solid;
+    border-width: 0.1vh;
+}
+
+* {
+    color: black;
+}
+
+main {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: color(display-p3 0.8 0.7 0.6);
+    padding: 1.2em;
+}
+
+main h1 {
+    text-align: center;
+    position: sticky;
+    top: 10px;
+    padding: 10px 0px 10px 0px;
+    background-color: color(display-p3 0.8 0.7 0.6);
+    border: 0.5mm solid black;
+}
+
+main img {
+    margin: auto;
+    border-color: white;
+    border-radius: 20px;
+    border: 1vw ridge;
+    display: block;
+    position: static;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: [one] 150px [two] 400px [three] auto [four] 400px [five] 150px [end];
+    /* can also write grid-template-columns: repeat(4, 25% [col-start])*/
+    grid-template-rows: [row1-start] 20% [row1-end] auto [third-line] 25% [fourth-line] 10px [last-line];
+}
+
+/* agenda list */
+main section ol {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-wrap: wrap;
+    grid-column-start: one;
+    grid-column-end: three;
+    grid-row-start: row1-end;
+    grid-row-end: fourth-line;
+    justify-self: start;
+}
+
+/* heading */
+#agenda {
+    grid-column-start: one;
+    grid-column-end: three;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+    justify-self: center;
+}
+
+/* agenda list items */
+:is(main section ol li,
+    main section ul li) {
+    flex-grow: 2;
+}
+/* heading */
+#attendance {
+    grid-column-start: four;
+    grid-column-end: end;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+    justify-self: center;
+}
+
+/* attendence list */
+main section div ul {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    grid-column-start: four;
+    grid-column-end: end;
+    grid-row-start: row1-end;
+    grid-row-end: fourth-line;
+    justify-items: start;
+}
+
+/* attendence and agenda list items */
+main section ul li{
+    margin: auto;
+    justify-self: start;
+    flex-grow: 2;
+}
+
+.date {
+    text-align: center;
+}
+
+main h2 {
+    color: var(--pink, pink);
+}
+
+
+main h3 {
+    color: color-mix(in oklab, #4e3eb4 90%, white);
+    background-color: color(display-p3 0.7 0.6 0.5);
+    width: max-content;
+    padding: 5px;
+}
+
+main div ul li {
+    display: inline;
+    margin: 0 0 0 0;
+    padding-left: 1cm;
+    padding-right: 1 cm;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+main form {
+    border: 1mm groove black;
+    padding: 5px;   
+}
+
+main form button {
+    &:hover {
+        background-color: green;
+        color: white;
+    }
+    &:active {
+        background-color: red;
+    }
+
+}
+
+p[class=summ] {
+    color: rgb(79, 103, 125);
+}
+
+h3 + ul {
+    font-weight: bold;
+    background-color: #C9DFF1;
+    padding: 1.5em;
+    width: max-content;
+}
+
+video ~ audio {
+    align-items: center;
+    border: 1mm dashed rgb(39, 103, 39);
+    padding: 1.5mm
+}
+
+main p[class="start/end"] {
+    text-decoration: underline;
+}
+
+main video:has(~audio) {
+    align-items: center;
+    border-left: 1.5mm solid rgb(12, 63, 192);
+    padding: 2mm;
 }
